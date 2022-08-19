@@ -1,141 +1,106 @@
-html {}
-{
-box-sizing: border-box;
-}
-body {
-font-family: 'Georgia', sans-serif;
-font-size: 2rem;
-font-weight: 400;
-line-height: 1.4;
-color: white;
-text-shadow: 2px 2px 2px rgba(5, 5, 5, 5);
-margin: 0;
-}
-body::before {
-content: '';
-position: fixed;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-z-index: -1;
-background: var(color-lightblue);
-background-image: linear-gradient(360deg,
-rgba(50, 50, 180, 0.8),
-rgba(136, 136, 22, 0.7)),
-url(https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-
-9/106397256_4123248846630_5222205517817560546_n.jpg?_nc_cat=108&ccb=1-
-7&_nc_sid=0debeb&_nc_ohc=ra8nSxWtaVoAX_Qy_aT&_nc_ht=scontent-dfw5-
-2.xx&oh=00_AT_jq7CBIAlFGAdiY3Otic_2g0ylHK6b1br7MsimLFHfTg&oe=6323BCA1);
-background-size: cover;
-background-position: center;
-}
-::placeholder {
-color: rgba(50, 50, 180, 0.8);
-opacity: 1
-}
-h1 {
-font-weight: 500;
-line-height: 1.2;
-}
-p {
-font-size: 1rem;
-}
-h1,
-p {
-margin-top: 1;
-margin-bottom: 1rem;
-}
-
-label {
-align-items: center;
-font-size: 1rem;
-margin-bottom: 1rem;
-}
-input,
-button,
-select,
-textarea {
-margin: 0;
-font-family: impact;
-font-size: impact;
-line-height: impact;
-}
-button {
-border: outset;
-}
-.container {
-width: 100%;
-margin: 3rem auto 0 auto;
-}
-.header {
-padding: 0 2rem;
-margin-bottom: 2;
-}
-.description {
-font-style: italic;
-font-weight: 200;
-text-shadow: 2px 2px 2px rgba(5, 5, 5, 5);
-}
-}
-.clue {
-margin-left: 0.25rem;
-font-size: 0.9rem;
-color: rgba(250, 0, 0, 0.8);
-}
-.text-center {
-text-align: center;
-}
-form {
-background: var(--dark-blue);
-padding: 2rem 1rem;
-border-radius: 1rem;
-}
-@media (min-width: 200px) {
-form {
-padding: 3rem;
-
-}
-}
-.form-group {
-margin: 0 auto 2rem auto;
-padding: 0.5rem;
-}
-.form-control {
-display: block;
-width: 100%;
-height: 3rem;
-padding: 1rem 1rem;
-color: rgba(50, 50, 180, 0.8);
-background-color: #fff;
-background-clip: padding-box;
-border: 1px solid rgba(50, 50, 180, 0.8);
-border-radius: 0.5rem;
-}
-.form-control:focus {
-border-color: #000000;
-outline: 0;
-box-shadow: 0 0 0 0.2rem rgba(100, 2, 255, 0.25);
-}
-.input-radio,
-.input-checkbox {
-display: inline-block;
-margin-right: 0.1rem;
-min-height: 1.5rem;
-min-width: 1.5rem;
-
-}
-.input-textarea {
-min-height: 120px;
-width: 100%;
-padding: 0.5rem;
-resize: vertical;
-}
-.submit-button {
-display: block;
-width: 100%;
-padding: 0.75rem;
-background: var(--dark-green);
-color: inherit;
-border-radius: 2px;
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="styles.css" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="title" class="text-center"&gt;Where Should the Leakes Move?&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="description" class="description text-center"&gt; and why is it Colorado?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;form id="survey-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label id="name-label" for="name"&gt;Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label id="email-label" for="email"&gt;Email&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label id="number-label" for="number"&gt;Age&lt;span class="clue"&gt;(optional)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Which option best describes your current role in their life?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select id="dropdown" name="role" class="form-control" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option disabled selected value&gt;Select current role&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="friend"&gt;Friend&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="family"&gt;Family&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="acquaintance"&gt;Aquaintance&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="preferNo"&gt;Prefer not to say&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="other"&gt;Other&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Do they need to leave Oklahoma?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input name="user-recommend" value="definitely" type="radio" class="input-radio" checked /&gt;yes&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input name="user-recommend" value="maybe" type="radio" class="input-radio" /&gt;YES&lt;/label&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="user-recommend" value="not-sure" type="radio" class="input-radio" /&gt;&lt;strong&gt;YES&lt;/strong&lt; /label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;What is your favorite activity in Colorado?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;select id="most-like" name="mostLike" class="form-control" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option disabled selected value&gt;Select an option&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="farmers-market"&gt;Farmers Markets&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="hiking"&gt;Hiking&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="food"&gt;The Food&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="mountains"&gt;Going into the Mountains&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>What are some of the things you would do with them if they moved?</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="clue"&gt;(Check all that apply)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="cookouts" type="checkbox" class="input-checkbox" /&gt; Cookouts&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input name="prefer" value="zoo-trips" type="checkbox" class="input-checkbox" /&gt;Trips to the Zoo&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="date-nights" type="checkbox" class="input-checkbox" /&gt;Date Nights&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="kid-play-dates" type="checkbox" class="input-checkbox" /&gt;Kid Play Dates&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="random-adventures" type="checkbox" class="input-checkbox" /&gt;Random Adventures&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="laugh" type="checkbox" class="input-checkbox" /&gt;Laugh A Ton&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="Movies" type="checkbox" class="input-checkbox" /&gt;Movies&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" /&gt;City Meetups&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="mountain-trips" type="checkbox" class="input-checkbox" /&gt;Trips to the Mountains&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="camping" type="checkbox" class="input-checkbox" /&gt;Camping&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;label&gt;&lt;input name="prefer" value="bike-rides" type="checkbox" class="input-checkbox" /&gt;Bike Rides&lt;/label&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;What would you tell us to convince us to finally move?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;textarea id="comments" class="input-textarea" name="comment" placeholder="Well, lets hear it?"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="submit" id="submit" class="submit-button"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>Submit</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+</body>
+</html>
